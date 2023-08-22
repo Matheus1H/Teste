@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escola de Idiomas</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+    <h1>Formulário de Matrícula</h1>
+
+    <form method="post" action="envia.php">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="idioma">Idioma:</label>
+        <select id="idioma" name="idioma">
+            <option value="ingles">Inglês</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="italiano">Italiano</option>
+            <option value="alemao">Alemão</option>
+        </select><br><br>
+
+        <label for="nivel">Nível de conhecimento:</label>
+        <input type="radio" id="basico" name="nivel" value="basico" required>
+        <label for="basico">Básico</label>
+        <input type="radio" id="intermediario" name="nivel" value="intermediario">
+        <label for="intermediario">Intermediário</label>
+        <input type="radio" id="avancado" name="nivel" value="avancado">
+        <label for="avancado">Avançado</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
